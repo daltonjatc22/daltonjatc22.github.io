@@ -48,7 +48,14 @@ $(function() {
 
     // porfolio filterizr
     $('.filtr-container').imagesLoaded( function() {
-        var filterizr = $('.filtr-container').filterizr();
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            $('#portfolio .portfolio-filter-menu > ul > li[data-filter=\'1\']').addClass("active");
+            var filterizr = $('.filtr-container').filterizr({filter: 1});
+        }else {
+            $('#portfolio .portfolio-filter-menu > ul > li[data-filter=\'all\']').addClass("active");
+            
+            var filterizr = $('.filtr-container').filterizr();
+        }
     });
 
     // portfolio filter

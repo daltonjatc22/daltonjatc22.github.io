@@ -110,6 +110,7 @@ ul {
 }
 .title-resume h2 span {
     color: #ff8c05;
+    font-size: 0.5em;
 }
 
 .box-content {
@@ -315,6 +316,11 @@ ul {
     margin-bottom: 15px;
     font-size: 22px;
 }
+
+.resume .timeline > li span {
+    margin-right: 2em;
+}
+
 .resume .my-skill .content-right .card {
     background: transparent;
     border: 0;
