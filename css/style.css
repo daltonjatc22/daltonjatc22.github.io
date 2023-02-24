@@ -8,7 +8,7 @@ navbar
 home intro
 about resume
 portfolio
-blog
+projects
 contact
 footer
 comment
@@ -386,14 +386,14 @@ ul {
 }
 
 /*portfolio*/
-.portfolio .row .col-md-4 {
+.certifications .row .col-md-4 {
     padding: 15px;
 }
-.portfolio .portfolio-filter-menu {
+.certifications .certifications-filter-menu {
     margin-bottom: 30px;
     text-align: center;
 }
-.portfolio .portfolio-filter-menu ul li {
+.certifications .certifications-filter-menu ul li {
     display: inline-block;
     margin: 0 15px;
     cursor: pointer;
@@ -403,11 +403,11 @@ ul {
     letter-spacing: 1px;
     transition: .4s ease-in-out;
 }
-.portfolio .portfolio-filter-menu ul li span {
+.certifications .certifications-filter-menu ul li span {
     z-index: 99;
     position: relative;
 }
-.portfolio .portfolio-filter-menu ul li span::after {
+.certifications .certifications-filter-menu ul li span::after {
     content: "";
     height: 0;
     left: 0;
@@ -418,26 +418,26 @@ ul {
     -webkit-transition: all 0.3s ease 0s;
     z-index: -1000;
 }
-.portfolio .portfolio-filter-menu ul li span:hover {
+.certifications .certifications-filter-menu ul li span:hover {
     color: #ff8c05;
 }
-.portfolio .portfolio-filter-menu ul li span:hover::after {
+.certifications .certifications-filter-menu ul li span:hover::after {
     height: 0.2em;
     background: #525252;
 }
-.portfolio .portfolio-filter-menu ul li.active {
+.certifications .certifications-filter-menu ul li.active {
     color: #ff8c05;
 }
-.portfolio .content-image {
+.certifications .content-image {
     position: relative;
 }
-.portfolio .content-image img{
+.certifications .content-image img{
     transition: filter 0.5s ease-in-out;
 }
-.portfolio .content-image:hover img {
+.certifications .content-image:hover img {
     filter: brightness(0.5);
 }
-.portfolio .content-image:hover .portfolio-caption .title::after {
+.certifications .content-image:hover .certifications-caption .title::after {
     content: '';
     position: absolute;
     top: 0;
@@ -452,10 +452,10 @@ ul {
     transform: translateY(101%);
     animation-delay: .1s;
 }
-.portfolio .content-image:hover .portfolio-caption .title h4 {
+.certifications .content-image:hover .certifications-caption .title h4 {
     opacity: 1;
 }
-.portfolio .content-image:hover .portfolio-caption .subtitle::after {
+.certifications .content-image:hover .certifications-caption .subtitle::after {
     content: '';
     position: absolute;
     top: 0;
@@ -470,20 +470,20 @@ ul {
     transform: translateY(101%);
     animation-delay: .5s;
 }
-.portfolio .content-image:hover .portfolio-caption .subtitle span {
+.certifications .content-image:hover .certifications-caption .subtitle span {
     opacity: 1;
 }
-.portfolio .content-image img {
+.certifications .content-image img {
     width: 100%;
     border-radius: 3px;
 }
-.portfolio .content-image .portfolio-caption {
+.certifications .content-image .certifications-caption {
     position: absolute;
     left: 30px;
     bottom: 30px;
     right: 30px;
 }
-.portfolio .content-image .portfolio-caption .title {
+.certifications .content-image .certifications-caption .title {
     overflow: hidden;
     position: relative;
     overflow: hidden;
@@ -491,7 +491,7 @@ ul {
     transition-duration: .4s;
     transition-delay: .4s;
 }
-.portfolio .content-image .portfolio-caption .title h4 {
+.certifications .content-image .certifications-caption .title h4 {
     font-size: 20px;
     font-weight: 700;
     transition-duration: .1s;
@@ -499,7 +499,7 @@ ul {
     opacity: 0;
     line-height: 24px;
 }
-.portfolio .content-image .portfolio-caption .subtitle {
+.certifications .content-image .certifications-caption .subtitle {
     overflow: hidden;
     position: relative;
     overflow: hidden;
@@ -507,12 +507,12 @@ ul {
     transition-duration: .4s;
     transition-delay: .4s;
 }
-.portfolio .content-image .portfolio-caption .subtitle span {
+.certifications .content-image .certifications-caption .subtitle span {
     transition-duration: .1s;
     transition-delay: 700ms;
     opacity: 0;
 }
-.portfolio .content-image .image-overlay {
+.certifications .content-image .image-overlay {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     position: absolute;
     width: 100%;
@@ -542,56 +542,56 @@ ul {
     }
 }
 /*blog*/
-.certifications .content {
+.projects .content {
     background: #262626;
     border-radius: 3px;
 }
-.certifications .content:hover img {
+.projects .content:hover img {
     -moz-transform: scale(1.03);
     -webkit-transform: scale(1.03);
     transform: scale(1.03);
 }
-.certifications .content .image {
+.projects .content .image {
     overflow: hidden;
 }
-.certifications .content .image img {
+.projects .content .image img {
     width: 100%;
     border-radius: 3px 3px 0 0;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.5s;
 }
-.certifications .content .certifications-title {
+.projects .content .project-title {
     padding: 20px;
 }
-.certifications .content .certifications-title h4 {
+.projects .content .project-title h4 {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 15px;
     line-height: 35px;
 }
-.certifications .content .certifications-title h4 a {
+.projects .content .project-title h4 a {
     transition: all .2s ease;
 }
-.certifications .content .certifications-title h4 a:hover {
+.projects .content .project-title h4 a:hover {
     color: #ff8c05;
 }
-.certifications .content .certifications-title .date {
+.projects .content .project-title .date {
     font-weight: 500;
 }
-.certifications .content .certifications-title .date i {
+.projects .content .project-title .date i {
     margin: 0 10px;
     font-size: 7px;
     vertical-align: middle;
     color: #525252;
 }
-.certifications .content .certifications-title .date span {
+.projects .content .project-title .date span {
     color: #ff8c05;
     font-size: 14px;
     position: relative;
     z-index: 99;
 }
-.certifications .content .certifications-title .date span::after {
+.projects .content .project-title .date span::after {
     content: "";
     height: 0;
     left: 0;
@@ -602,7 +602,7 @@ ul {
     -webkit-transition: all 0.3s ease 0s;
     z-index: -1000;
 }
-.certifications .content .certifications-title .date span:hover::after {
+.projects .content .project-title .date span:hover::after {
     height: 0.2em;
     background: #525252;
 }
@@ -675,6 +675,14 @@ ul {
     margin-bottom: 0;
 }
 
+/* Special wrapping */
+.wrap-on-mobile{
+    display: none;
+}
+.wrap-on-desktop{
+    display: inline;
+}
+
 /*responsive*/
 @media (max-width: 768px) {
     .box-content {
@@ -724,7 +732,7 @@ ul {
         font-size: 40px;
     }
 
-    .portfolio .content-image .portfolio-caption {
+    .certifications .content-image .certifications-caption {
         position: absolute;
         left: 10px;
         bottom: 10px;
@@ -732,7 +740,7 @@ ul {
         text-align: center;
     }
 
-    .blog .content .blog-title h4 {
+    .projects .content .project-title h4 {
         font-size: 22px;
     }
 
@@ -767,19 +775,19 @@ ul {
         margin-bottom: 30px;
     }
 
-    .portfolio .content-image .portfolio-caption {
+    .certifications .content-image .certifications-caption {
         display: inline-table;
         margin: 0 auto;
     }
-    .portfolio .content-image .portfolio-caption .title {
+    .certifications .content-image .certifications-caption .title {
         display: block;
         margin-bottom: 10px;
     }
 
-    .blog .content {
+    .projects .content {
         margin-bottom: 30px;
     }
-    .blog .content.no-mb {
+    .projects .content.no-mb {
         margin-bottom: 0;
     }
 
@@ -788,6 +796,12 @@ ul {
     }
     .contact .content-left h2 {
         margin-bottom: 40px;
+    }
+    .wrap-on-desktop{
+        display: none;
+    }
+    .wrap-on-mobile{
+        display: inline;
     }
 }
 @media (max-width: 630px) {
