@@ -1,0 +1,110 @@
+body{
+    --yellow: #F8F0FB;
+    --yellow-white: #F8F0FB;
+    --off-white: #F8F0FB;
+    --purple-gray: #272529;
+    --desaturated-purple: #3c3347;
+    --cobalt-blue: #17143b;
+}
+
+
+
+
+.safety .safety-header {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   position: relative;
+   padding: 2%;
+   margin: 0 30%;
+   bottom: 10px;
+   font-size: 45px;
+   font-family: 'Russo One', sans-serif;
+   
+   border-radius: 10em;
+}
+.safety .parallax {
+   padding-top: 0px;
+    background-image: url("../media/Images/childastronaut.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.safety .parallax-end {
+   padding-top: 0px;
+    background-image: url("../media/Images/childastronaut.png");
+    min-height: 10vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.safety .parallax-two {
+    background-image: url("../media/Images/old-img/astronaut-2021-08-26-15-29-33-utc.png");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.safety .squares-wrapper {
+    display: flex;
+    justify-content: center;
+ }
+
+ .safety .squares-wrapper > .squares {
+    width: 1000px;
+    margin-top: 20px;
+    background-color: #0a0827bb;
+
+ }
+
+ .safety .squares-wrapper > .squares > .square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -4px;
+ }
+
+ .safety .square > .img-wrapper img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  margin-bottom: 4px;
+ }
+
+ .safety .square > .square-text-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 42px;
+    padding-bottom: 0px;
+ }
+
+ .safety .square > .square-text-wrapper a{
+    text-decoration: none;
+    color: var(--off-white);
+ }
+
+
+@media (max-width: 616px) {
+   
+ .square {
+   grid-template-columns: 1fr !important;
+}
+.square > .square-text-wrapper {
+   order: 1;
+}
+
+.square > .img-wrapper {
+   order: 2;
+}
+}

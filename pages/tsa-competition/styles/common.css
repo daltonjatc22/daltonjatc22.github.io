@@ -1,0 +1,60 @@
+::-webkit-scrollbar { 
+    display: none;
+}
+
+
+body, .other-pages {
+    margin: 0px;
+    --yellow: #f0eeb1;
+    --yellow-white: #eeedd2;
+    --off-white: #ecece0;
+    --purple-gray: #272529;
+    --desaturated-purple: #3c3347;
+    --cobalt-blue: #17143b;
+    --darker-blue: #0b0920;
+
+    --crimson: #D80032;
+    --rich-black: #00000E;
+    --oxford-blue: #000022;
+    --penn-blue: #001242;
+    --russian-violet: #3A2353;
+    --lavender: #F0E7FA;
+    --magnolia: #F8F0FB;
+    
+
+    background-color: var(--darker-blue);
+    color:var(--magnolia);
+}
+nav{
+    font-family:'Kanit', sans-serif ;
+    padding: 0px 0px;
+    padding-top: 0px;
+    height: 200px;
+    margin: 0px;
+    position: sticky;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+p, h2, h3, h4, h5, h6 {
+    font-family: 'Kanit', sans-serif;
+     
+}
+
+h1 {
+    font-family: 'Russo One', sans-serif!important;
+}
+
+body img{
+    pointer-events: none;
+}
+
+.home, .launch, .planning, .safety, .sources, .time.html {
+    width: 100vw;
+}
+/* 
+new little font: font-family: 'Kanit', sans-serif;
+old little font: font-family: 'Space Mono', monospace;
+new big font: font-family: 'Russo One', sans-serif; 
+old big font: font-family: 'Golos Text', sans-serif;
+*/

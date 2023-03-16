@@ -1,0 +1,177 @@
+:root {
+    --background-color: #000;
+
+    /*Emphasized Color Scheme*/
+    --deep-red: #73161E;
+    --red: #BF2633;
+    --cream: #F8F0FB;
+    --tan: #F29580;
+    --black: #000000;
+
+    /*Alternates*/
+    --deep-red-alt: #8C1822;
+    --red-alt: #8C1822;
+    --manor-red: #401616;
+    --ash: #A69292;
+
+    /* Custom perspective prop */
+    --z-height: 0;
+}
+
+.home {
+    background-image: url(../media/Images/backgrounds/stars.png);
+    background-repeat: repeat;
+    color: var(--cream);
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.home main {
+    perspective: 1000px;
+    perspective-origin: top;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.home main > .destination-wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 1s all ease-in-out;
+    transform: scale(var(--planet-scale)) translateZ(var(--z-height));
+}
+
+.home main > .destination-wrapper > .btn {
+    color: white!important;
+    background-color: var(--red);
+
+    position: absolute;
+    top: 15%;
+    right: 25%;
+}
+
+.home main > .destination-wrapper > img {
+    width: 75vw;
+    height: 75vh;
+    object-fit: contain;
+}
+
+.home .hero-title {
+    font-family: 'Russo One', sans-serif; 
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    
+}
+/*h1{
+    background: -webkit-linear-gradient(var(--russian-violet), var(--crimson));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}*/
+
+
+.home .booking-modal {
+    position: fixed;
+    right: 12.5vw;
+    top:12.5vh;
+    width: 75vw;
+    max-height: 75vh;
+    z-index: 100;
+    padding: 1em;
+    border-radius: 0.5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background-color: #111;
+
+}
+
+.home .booking-modal > .btn-close {
+    color: var(--cream);
+    width: 1em;
+    height: 1em;
+    align-self: flex-end;
+}
+
+.home .booking-modal > .calendar > table {
+    width: 100%;
+    max-height: 65vh;
+    aspect-ratio: 7/6;
+    border-radius: 10px;
+}
+
+/* add border to calender */ 
+.home .booking-modal > .calendar > table > tbody > tr > td {
+    border: 1px solid var(--cream);
+    border-collapse: separate;
+    padding: 0.75em;
+
+    vertical-align: top;
+}
+
+/* bevel Border on corner td's */ 
+.home .booking-modal > .calendar > table > tbody > tr:first-child > :first-child {
+    border-radius: 10px;
+}
+
+.home .booking-modal > .calendar > table > tbody > tr > .selected-date{
+    background-color: var(--red);
+}
+
+.home .booking-modal .price {
+    min-height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 1em;
+
+
+}
+
+.home .booking-modal .price > .btn{
+    background-color: var(--red);
+	color: white!important;
+}
+
+.home .destination-selector {
+    font-size: 1.5em;
+    padding-right: 0.5em;
+
+    position: fixed;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+
+    z-index: 99;
+}
+
+#scroll-highlight {
+    display:inline;
+    opacity: 0;
+    cursor: default;
+}
+
+
+@keyframes blinking {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 0;
+    }
+}
