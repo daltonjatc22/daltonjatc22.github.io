@@ -23,9 +23,7 @@ $(function() {
             var hash = this.hash;
 
             $("html, body").animate({
-
                 scrollTop: $(hash).offset().top - 50
-
             }, 850);
 
         }
@@ -75,6 +73,7 @@ $(function() {
         });
     });
 
+    /*
     // navbar on scroll
     $(window).on("scroll", function() {
 
@@ -88,6 +87,7 @@ $(function() {
         }
 
     });
+    */
 
 
 });
