@@ -607,6 +607,27 @@ ul {
     background: #525252;
 }
 
+.projects .projects-chevron-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 0;
+
+    color: white;
+
+    position: relative;
+    z-index: 1;
+
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.projects .projects-chevron-left::-webkit-scrollbar{
+    display: none;
+}
+
 /*contact*/
 .contact .content-left h2 {
     font-size: 50px;
