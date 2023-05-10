@@ -17,11 +17,11 @@ Ajax Contact Form
     var $form = $('#contact-form');
 
     $form.submit(function (e) {
-        // remove the error class
+        /* remove the error class */
         $('.form-group').removeClass('has-error');
         $('.help-block').remove();
 
-        // get the form data
+        /* get the form data */
         var formData = {
             'name' : $('input[name="form-name"]').val(),
             'email' : $('input[name="form-email"]').val(),
@@ -29,7 +29,7 @@ Ajax Contact Form
             'message' : $('textarea[name="form-message"]').val()
         };
 
-        // process the form
+        /* // process the form */
         $.ajax({
             type : 'POST',
             url  : 'contact-form.php',
@@ -37,7 +37,7 @@ Ajax Contact Form
             dataType : 'json',
             encode : true
         }).done(function (data) {
-            // handle errors
+            /* // handle errors */
             if (!data.success) {
                 if (data.errors.name) {
                     $('#name-field').addClass('has-error');
@@ -59,11 +59,11 @@ Ajax Contact Form
                     $('#message-field').find('.col-lg-10').append('<span class="help-block">' + data.errors.message + '</span>');
                 }
             } else {
-                // display success message
+                /* // display success message */
                 $form.html('<div class="alert alert-success">' + data.message + '</div>');
             }
         }).fail(function (data) {
-            // for debug
+            /* // for debug */
             console.log(data)
         });
 

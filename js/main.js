@@ -4,17 +4,17 @@ $(function() {
 
     $('.fakeLoader').fakeLoader({
 
-        timeToHide: 1200, //Time in milliseconds for fakeLoader disappear
+        timeToHide: 1200, /* //Time in milliseconds for fakeLoader disappear */
 
-        zIndex: "999",//Default zIndex
+        zIndex: "999",/* //Default zIndex */
 
-        spinner: "spinner3",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+        spinner: "spinner3",/* //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' */
 
-        bgColor: "#212121" //Hex, RGB or RGBA colors
+        bgColor: "#212121" /* //Hex, RGB or RGBA colors */
 
     });
        
-    // smooth scroll
+    /* // smooth scroll */
     $("a").on("click", function(event) {
 
         if (this.hash !== "") {
@@ -30,21 +30,21 @@ $(function() {
 
     });
 
-    // hide navbar on mobile after click
+    /* // hide navbar on mobile after click */
     $('.navbar-nav a').on('click', function() {
         $('.navbar-collapse').collapse('hide');
     });
 
-    // carousel resume
+    /* // carousel resume */
     $('.owl-carousel').owlCarousel({
         items: 1,
         margin: 10
     });
 
-    // collapse show on resume
+    /* // collapse show on resume */
     $('.collapse-show').collapse();
 
-    // porfolio filterizr
+    /* // porfolio filterizr */
     $('.filtr-container').imagesLoaded( function() {
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
             $('#portfolio .portfolio-filter-menu > ul > li[data-filter=\'1\']').addClass("active");
@@ -56,16 +56,16 @@ $(function() {
         }
     });
 
-    // portfolio filter
+   /*  // portfolio filter */
     $('.portfolio-filter-menu li').on('click', function() {
         $('.portfolio-filter-menu li').removeClass('active');
         $(this).addClass('active');
     });
 
-    // portfolio magnific popup
-    $('.portfolio').each(function() { // the containers for all your galleries
+    /* // portfolio magnific popup */
+    $('.portfolio').each(function() {/*  // the containers for all your galleries */
         $(this).magnificPopup({
-            delegate: '.portfolio-popup', // the selector for portfolio item
+            delegate: '.portfolio-popup', /* // the selector for portfolio item */
             type: 'image',
             gallery: {
                 enabled: true
@@ -84,7 +84,7 @@ $(function() {
 
     $('.x-drag-scrolling').mouseup(function(){
         isXDragScrolling = false;
-        XDragStartPos = null; // Creates Error if invalid
+        XDragStartPos = null; /* // Creates Error if invalid */
         console.log(isXDragScrolling);
     });
 
